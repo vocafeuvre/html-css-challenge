@@ -20,7 +20,6 @@ html, body {
     
     display: flex;
     flex-direction: column;
-    height: 100%;
 }
 
 .profile-portrait {
@@ -79,13 +78,17 @@ html, body {
 .main {
     width: 100%;
     box-sizing: border-box;
+    position: relative;
 }
 
 .main .header {
+    position: absolute;
+    top: 0;
     display: flex;
     justify-content: space-between;
     padding: 5px;
     height: 50px;
+    width: 100%;
 
     box-shadow: 0px 0px 5px rgb(15, 15, 88);
     box-sizing: border-box;
@@ -124,7 +127,7 @@ html, body {
 }
 
 .content-container {
-    padding: 15px;
+    padding: 70px 15px 20px 15px;
     box-sizing: border-box;
 }
 
@@ -200,6 +203,7 @@ html, body {
     color: white;
     padding: 10px;
     margin: 0px 10px;
+    border-radius: 15px;
 }
 
 .statistic-header {
@@ -215,11 +219,80 @@ html, body {
     text-align: right;
 }
 
-.form-proper label {
-    display: block;
-}
-
 h1 {
     margin: 0;
-    padding-bottom: 15px;
+    padding-bottom: 5px;
+}
+
+hr {
+    margin-bottom: 15px;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, #ccc, rgb(15, 15, 88), #ccc);
+}
+
+.input-file {
+    display: none;
+}
+
+.form-element {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.form-element select {
+    border: 1px solid;
+    outline: none;
+    border-radius: 10px;
+    font-size: 1.2em;
+    font-family: inherit;
+}
+
+.form-element textarea {
+    resize: none;
+    border: 1px solid;
+    outline: none;
+    border-radius: 10px;
+    height: 4.8em;
+    font-size: 1em;
+    font-family: inherit;
+}
+
+.file.form-element {
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(15, 15, 88);
+    color: white;
+    font-size: 2em;
+    font-weight: 400;
+    height: 300px;
+}
+
+.file.form-element:hover {
+    background-color: rgb(25, 25, 136);
+}
+
+.divider {
+    padding: 5px 0px;
+    visibility: hidden;
+}
+
+button.send {
+    margin-left: 10px;
+    background-color: rgb(15, 15, 88);
+    color: white;
+    font-family: inherit;
+    font-size: 1em;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button.send:hover {
+    background-color: rgb(25, 25, 136);
 }

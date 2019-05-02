@@ -72,6 +72,7 @@
                             <h1 class="statistics-header">
                                 Vital Statistics
                             </h1>
+                            <hr />
                             <div class="statistic-group">
                                 <div class="statistic">
                                     <div class="statistic-header">
@@ -111,7 +112,7 @@
                                         Black Order
                                     </div>
                                     <div class="statistic-value">
-                                        10
+                                        10 thousand
                                     </div>
                                     <div class="statistic-label">
                                         armies deployed
@@ -123,22 +124,29 @@
                             <h1 class="form-header">
                                 Send Instructions
                             </h1>
+                            <hr />
                             <form>
-                                <label>
+                                <label class="form-element">
                                     Send to
-                                    <input type="text" class="input-text" />
+                                    <select>
+                                        <option>Ebony Maw</option>
+                                        <option>Proxima Midnight</option>
+                                        <option>Cull Obsidian</option>
+                                        <option>Corvus Glaive</option>
+                                    </select>
                                 </label>
-                                <label>
+                                <label class="form-element">
                                     Instructions
-                                    <textarea type="text" class="input-text" wrap="soft">
-                                        I need you to decimate this planet:
-                                    </textarea>
-                                    />
+                                    <textarea type="text" class="input-text">I need you to decimate this planet.</textarea>
                                 </label>
-                                <label>
-                                    Directives
+                                <label class="file form-element">
+                                    Attach your Directives
                                     <input type="file" class="input-file" />
                                 </label>
+                                <hr class="divider"/>
+                                <button class="send">
+                                    Send Instructions
+                                </button>
                             </form>
                         </div>
                     </div>
