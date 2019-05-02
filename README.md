@@ -8,3 +8,9 @@ This is a repo holding all of my work during my self-imposed 100 Days of HTML/CS
 
 ### Things to note
 - My goal here is to code first the page, then refactor if I have time after. Due to this, the CSS may be poorly written.
+
+### Next steps
+1. Try to make all my pages responsive.
+2. Create a home page.
+3. Dabble in SVG.
+4. Refactor and align my pages' css with each of the dominant CSS methodologies (OOCSS, BEM, SMACSS).
